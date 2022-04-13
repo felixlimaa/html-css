@@ -1,0 +1,593 @@
+:root{
+    --cor1:#060B1F;
+    --cor2:#E0E0E3;
+    --grande: 26px;
+    --medio:16px;
+    --pequeno:10px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--cor2);
+}
+
+/* Cabeçalho */
+header{
+    width: 100%;
+    height:68px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--cor1);
+}
+
+.logo-section{
+    width:50%;
+    padding:13px;
+}
+
+.logo-section img{
+    height: 41px;
+    width: 41px;
+}
+
+.menu-section-desktop{
+    display: flex;
+    width: 50%;
+}
+
+.menu-section-desktop a{
+    text-decoration: none;
+    width: calc(100%/4);
+    text-align: center;
+}
+
+.menu-section-desktop a:hover{
+    transition: 0.5s;
+    opacity: 0.25;
+    color: var(--cor1);
+    
+}
+
+.menu{
+    color:var(--cor2);
+    font-size: var(--medio);
+    padding-top:21px;
+    padding-bottom:21px;
+    display: flex;
+    flex-direction: column; 
+    max-width: none;
+    transition: 0.5s;
+    padding: 21px 0;
+    text-align: center;
+    margin: 0;    
+}
+
+.menu-mobile, .ocultar-menu{
+    width: 0;
+}
+
+.ocultar-menu img{
+    width: 0;
+    height: 0;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+/* Banner inicial */
+.banner{
+    max-width: 100%;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--cor1);
+}
+
+.banner p{
+    padding: 69px 0 0 0;
+    font-size: 26px;
+}
+
+.banner h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* Todos os projetos */
+.todos-os-projetos{
+    max-width: 100%;
+    text-align: center;
+    background-color: var(--cor1);
+}
+
+.todos-os-projetos div h2{
+    padding-top:14px;
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+.lista-todos-os-projetos{
+    padding: 0 62px 51px 62px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.box-projeto-atemporal{
+    width: calc(100%/3);
+    text-decoration: none;
+}
+
+.projeto-de-brigadeiros-gourmet{
+    max-width:352px;
+    margin:35px 16px 0 16px;
+    height:242px;
+    background-image: url("../img/capa-projetos/capa-brigadeiros-gourmet.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+a:hover .projeto-de-brigadeiros-gourmet{
+    height:260px;
+    max-width:370px;
+    position:relative;
+    transition: 0.5s;
+}
+
+.nome-projeto{
+    padding-top: 179px;
+    color: var(--cor2);
+    font-size: var(--medio);
+    text-shadow: 1px 1px 2px black;
+    transition: 0.5s;
+}
+
+a:hover .nome-projeto{
+    font-size: var(--grande);
+    transition: 0.5s;
+}
+
+/*Sobre mim*/
+.sobre-mim{
+    margin: 22px 122px 51px 122px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bloco-foto01{
+    width: 50%;
+}
+
+.foto-felix{
+    width: 400px;
+    height: auto;
+}
+
+.bloco-texto01{
+    width: 50%;
+}
+
+.titulo-sobre-mim{
+    width: 324px;
+    font-size: var(--grande);
+}
+
+.paragrafo-sobre-mim01{
+    width:560px;
+    padding: 31px 0;
+    font-size: 16px;
+}
+
+.bloco-texto02{
+    width: 100%;
+}
+
+.paragrafo-sobre-mim02{
+    margin: 31px 0;
+    font-size: 16px;
+}
+
+.bloco-texto03{
+    width: 50%;
+}
+
+.paragrafo-sobre-mim03{
+    width:557px;
+    margin: 31px 0;
+    font-size: 16px;
+}
+
+.bloco-foto02{
+    width: 50%;
+}
+
+.foto-react{
+    width: 445px;
+    height: auto;
+    padding: 0 0 0 119px;
+}
+
+/* Serviços prestados */
+.servicos{
+    padding: 22px 0 73px 0;
+    background-color: var(--cor1);
+    text-align: center;
+}
+
+.servicos h1{
+    color: var(--cor2);
+    font-size: var(--grande);
+}
+
+.todos-os-servicos{
+    margin: 25px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bloco-servico{
+    padding: 23px 0;
+    border-radius: 5px;
+    width: 304px;
+    height:auto;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    margin: 40px;
+}
+
+.quadro-servico{
+    margin: 0 18px 14px 18px;
+    width: 269px;
+    height: auto;
+}
+
+.nome-servico{
+    font-size: 22px;
+}
+
+.descricao-servico{
+    margin: 20px 0;
+    font-size: 16px; 
+}
+
+.servicos-observacao{
+    margin: 48px 0 0 0;
+    color:var(--cor2);
+}
+
+/* Contato */
+.contato{
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 69px;
+}
+
+.contato div h2{
+    padding-top: 24px;
+    color: var(--cor1);
+    font-size: (--medio);
+}
+
+.canais-de-comunicacao{
+    max-width: 100%;
+    padding-top: 77px;
+    display: flex;
+}
+
+.box-contato{
+    width:calc(100%/4);
+}
+
+.box-contato a{
+    text-decoration: none;
+}
+
+.box-contato a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--cor1);
+    text-decoration-thickness: 2px;
+    transition: 0.5s;
+}
+
+.ponto-de-contato{
+    width: 39px;
+    height: 39px;
+}
+
+.ponto-de-contato-unico{
+    margin-top: 16px;
+    color: var(--cor1);
+    font-size: var(--medio);
+}
+
+footer{
+    max-width: 100%;
+    height: 68px;
+    text-align: center;
+    background-color: var(--cor1);
+}
+
+footer p{
+    color: var(--cor2);
+    font-size: var(--medio);
+    padding:21px;
+}
+
+@media screen and (max-width: 1110px) {
+    
+    /*Sobre mim*/
+    .sobre-mim{
+        margin: 22px 0 51px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bloco-foto01, .bloco-texto01, .bloco-texto02, .bloco-texto03, .bloco-foto02{
+        width: 100%;
+        text-align: center;
+    }
+
+    .foto-felix, .foto-react{
+        width: 300px;
+        height: auto;
+        padding: 16px 0;
+    }
+
+    .titulo-sobre-mim{
+        text-align: center;
+        margin: 19px 0;
+        width: 100%;
+        font-size: 43px;
+    }
+
+    .paragrafo-sobre-mim01, .paragrafo-sobre-mim02, .paragrafo-sobre-mim03{
+        width:calc(100%);
+        padding: 16px;
+        font-size: 16px;
+        margin: 0;    
+    }
+    
+    /*Todos os serviços oferecidos*/
+    .todos-os-servicos{
+        margin: 25px 0 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bloco-servico{
+        padding: 23px 0;
+        border-radius: 5px;
+        width: 304px;
+        height:auto;
+        background-color: var(--cor2);
+        color: var(--cor1);
+        margin: 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+
+    .box-projeto-atemporal{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+
+    header{
+        display: flex;
+    }
+
+    .logo-section{
+        width: calc(100%/2);
+        padding:13px 0;
+        text-align: left;
+    }
+
+    .logo-section img{
+        margin: 0 13px;
+    }
+
+    /*Menu desktop*/
+    .menu-section-desktop{
+        display: none;
+        width: 0;
+    }
+
+    /*Menu hamburguer*/
+    .ocultar-menu{
+        width: calc(100%/2);
+        padding:13px 0;
+        text-align: right;
+    }
+
+    .ocultar-menu img{
+        width: calc(100%/2);
+        height: 41px;
+        cursor: pointer;
+    }
+
+    .menu-mobile{
+        display: none;
+        width: calc(100%/2);
+        position:relative;
+        margin-left: 50%;
+        color: var(--cor2);
+        background-color: var(--cor1);
+        transition: 0.5s;
+    }
+
+    /*Mostrar o menu mobile*/
+    .mostrar{
+        display: block;
+    }
+
+    /*Oculta o menu mobile mostrado*/
+    .ocultar{
+        display: none;
+    }
+
+    .menu-mobile a{
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .menu{
+        max-width: calc(100%/2);
+        display: flex;
+        flex-direction: column;
+        color:var(--cor2);
+        font-size: var(--medio);
+        transition: 0.5s;
+        padding: 21px 0;
+        text-align: center;
+        margin: 0 25%;
+    }
+
+    .banner p{
+        padding: 111px 0 0 0;
+        font-size: 26.576019px;
+    }
+
+    /* Todos os projetos */
+    .todos-os-projetos{
+        max-width: 100%;
+        text-align: center;
+        background-color: var(--cor1);
+    }
+
+    .todos-os-projetos div h2{
+        padding-top:14px;
+        color: var(--cor2);
+        font-weight: bold;
+    }
+
+    .lista-todos-os-projetos{
+        padding: 0 0 51px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .box-projeto-atemporal{
+        width: 100%;
+    }
+
+    a:hover .projeto-de-brigadeiros-gourmet{
+        height:none;
+        max-width:none;
+        position:none;
+        transition: none;
+    }
+
+    .projeto-de-brigadeiros-gourmet{
+        max-width:100%;
+        margin:35px 0 0 0;
+        height:242px;
+        background-color: var(--cor2);
+    }
+    
+    .nome-projeto{
+        padding-top: 179px;
+        color: var(--cor2);
+        font-size: var(--medio);
+        text-shadow: 1px 1px 2px black;
+        transition: 0.5s;
+    }
+    
+    a:hover .nome-projeto{
+        font-size: var(--grande);
+        transition: 0.5s;
+    }
+
+    /*Sobre mim*/
+    .sobre-mim{
+        margin: 22px 0 51px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bloco-foto01, .bloco-texto01, .bloco-texto02, .bloco-texto03, .bloco-foto02{
+        width: 100%;
+        text-align: center;
+    }
+
+    .foto-felix, .foto-react{
+        width: 300px;
+        height: auto;
+        padding: 16px 0;
+    }
+
+    .titulo-sobre-mim{
+        text-align: center;
+        margin: 19px 0;
+        width: 100%;
+        font-size: 43px;
+    }
+
+    .paragrafo-sobre-mim01, .paragrafo-sobre-mim02, .paragrafo-sobre-mim03{
+        width:calc(100%);
+        padding: 16px;
+        font-size: 16px;
+        margin: 0;    
+    }
+
+    /* Contato */
+    .contato{
+        max-width: 100%;
+        text-align: center;
+        padding-bottom: 69px;
+    }
+
+    .contato div h2{
+        padding-top: 24px;
+        color: var(--cor1);
+        font-size: (--medio);
+    }
+
+    .canais-de-comunicacao{
+        max-width: 100%;
+        padding-top: 77px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .box-contato{
+        width:100%;
+    }
+
+    .ponto-de-contato{
+        width: 39px;
+        height: 39px;
+    }
+
+    .ponto-de-contato-unico{
+        margin-top: 16px;
+        margin-bottom: 25.888px;
+        color: var(--cor1);
+        font-size: var(--medio);
+    }
+
+}
