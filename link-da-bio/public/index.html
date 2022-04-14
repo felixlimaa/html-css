@@ -3,6 +3,7 @@
         <meta charset="utf-8"/>
         <title>Todos os links da bio do meu instagram</title>
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="device.width, initial-scale=1.0, maximum-scale=1.0"/>
     </head>
 
     <body>
@@ -22,5 +23,49 @@
             <a href="mailto:contato.felixarruda@gmail.com"><button>Toque aqui para me enviar um e-mail</button></a>
 
         </section>
+
+        <script type="module">
+
+            // Import the functions you need from the SDKs you need
+          
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+          
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+          
+            // TODO: Add SDKs for Firebase products that you want to use
+          
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+          
+            // Your web app's Firebase configuration
+          
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          
+            const firebaseConfig = {
+          
+              apiKey: "AIzaSyAySeK6hlX_WTnDDl5gP2dfwaNfukZADbY",
+          
+              authDomain: "link-in-bio-felix-lima-39e0c.firebaseapp.com",
+          
+              projectId: "link-in-bio-felix-lima-39e0c",
+          
+              storageBucket: "link-in-bio-felix-lima-39e0c.appspot.com",
+          
+              messagingSenderId: "285792967356",
+          
+              appId: "1:285792967356:web:ddef4f789e39e1d8864eb9",
+          
+              measurementId: "G-FV1X9BRYKC"
+          
+            };
+          
+          
+            // Initialize Firebase
+          
+            const app = initializeApp(firebaseConfig);
+          
+            const analytics = getAnalytics(app);
+          
+          </script>
     </body>
 </html>

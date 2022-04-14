@@ -20,6 +20,7 @@ body{
 @keyframes foto-anim {
     0%{
         width: 100px;
+
     }
 
     50%{
@@ -41,8 +42,8 @@ body{
     border-style:outset;
     border-color: aliceblue;
     border-width: 5px;
-    transition: 1s;
-    animation: foto-anim 10s infinite 5s;
+    animation: foto-anim 10s infinite;
+    animation-delay: 0s;
 }
 
 @keyframes h1-anim {
@@ -64,8 +65,8 @@ body{
     font-size: 24px;
     color: #ffffff;
     text-shadow: -2px -2px 5px black;
-    animation: h1-anim 10s infinite 5s;
-    transition: 1s;
+    animation: h1-anim 5s infinite;
+    animation-delay: 0s;
 }
 
 .links{
@@ -75,7 +76,7 @@ body{
     text-align: center;
 }
 
-.links a {
+.links a{
     margin: auto;
     padding: auto;
 }
@@ -99,6 +100,6 @@ body{
     background-color: #3ff5ff;
     border-radius: 5px;
     font-weight: bold;
-    animation: anim 10s infinite 5s;
+    animation: anim 10s infinite;
+    animation-delay: 0s;
 }
-
