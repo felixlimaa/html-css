@@ -1,7 +1,6 @@
 {
   "hosting": {
     "public": "public",
-    "site": "link-in-bio-felix-limaa",
     "ignore": [
       "firebase.json",
       "**/.*",
