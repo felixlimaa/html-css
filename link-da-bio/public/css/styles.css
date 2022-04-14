@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-image: url('../img/bg-felix.png');
+    background-position: center;
+}
+
+.informacoes__principais{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@keyframes foto-anim {
+    0%{
+        width: 100px;
+    }
+
+    50%{
+        width: calc(100px*1.618);
+        border-radius: calc(150px/2*1.618);
+    }
+
+    100%{
+        width: 100px;
+    }
+
+}
+
+.informacoes__principais img{
+    margin: 12px 0;
+    align-self: center;
+    height: auto;
+    border-radius: calc(150px/2);
+    border-style:outset;
+    border-color: aliceblue;
+    border-width: 5px;
+    transition: 1s;
+    animation: foto-anim 10s infinite 5s;
+}
+
+@keyframes h1-anim {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.informacoes__principais h1{
+    margin: 12px 0;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: -2px -2px 5px black;
+    animation: h1-anim 10s infinite 5s;
+    transition: 1s;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.links a {
+    margin: auto;
+    padding: auto;
+}
+
+@keyframes anim{
+    0%{margin:16px;
+        padding:16px;}
+
+    50%{margin:20px 0;
+        padding:20px;}
+    
+    100%{margin:16px;
+        padding:16px;}
+}
+
+.links a button{
+    cursor: pointer;
+    color: #030c23;
+    box-shadow: -1px -1px 10px black;
+    border-color: #3ff5ff;
+    background-color: #3ff5ff;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: anim 10s infinite 5s;
+}
+
